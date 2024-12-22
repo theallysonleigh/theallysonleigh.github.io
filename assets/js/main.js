@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const fetchImages = () => {
     const imagesWrapper = document.querySelector('[data-carousel]');
-    const baseImages = imagesWrapper.querySelectorAll('img:not([data-carousel-mobile-only].hidden)').values().toArray();
-    const mobileImages = imagesWrapper.querySelectorAll('img[data-carousel-mobile-only].hidden').values().toArray();
+    const baseImages = imagesWrapper.querySelectorAll('img:not([data-carousel-mobile-only].hidden)').values();
+    const mobileImages = imagesWrapper.querySelectorAll('img[data-carousel-mobile-only].hidden').values();
 
-    return isMobile() ? [...baseImages, ...mobileImages] : baseImages;
+    return isMobile() ? [...baseImages, ...mobileImages] : [...baseImages];
   }
 
   const isMobile = () => {
