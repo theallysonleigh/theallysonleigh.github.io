@@ -14,7 +14,7 @@
     class="h-dvh w-dvw lg:flex lg:flex-col justify-center items-center lg:gap-10"
   >
     <div
-      class="fixed lg:static h-dvh w-dvw lg:h-auto lg:w-auto flex flex-col justify-evenly lg:grid lg:grid-cols-3-auto lg:gap-x-6 lg:gap-y-8 text-center z-0"
+      class="fixed lg:static h-dvh w-dvw lg:h-auto lg:w-auto flex flex-col justify-evenly lg:grid lg:grid-cols-3-auto lg:gap-x-6 lg:gap-y-8 text-center z-10"
     >
       <span class="font-serif text-8xl lg:text-7xl xl:text-8xl">I can do</span>
       <span class="font-mono text-6xl lg:hidden" data-splash-animate-font-mobile
@@ -38,10 +38,10 @@
       </address>
     </div>
 
-    <article class="relative z-10">
-      <div class="h-dvh w-dvw lg:hidden"></div>
+    <article>
+      <div class="relative h-dvh w-dvw lg:hidden z-0"></div>
       <div
-        class="h-dvh w-dvw lg:h-auto lg:w-auto content-center lg:flex lg:gap-6"
+        class="relative h-dvh w-dvw lg:h-auto lg:w-auto content-center lg:flex lg:gap-6"
       >
         <button
           class="hidden lg:block font-button text-8xl"
@@ -51,7 +51,7 @@
         </button>
 
         <div
-          class="w-72 my-auto mx-auto pb-[16vh] lg:p-0 lg:m-0 lg:w-[32rem]"
+          class="relative w-72 my-auto mx-auto pb-[16vh] lg:p-0 lg:m-0 lg:w-[32rem] z-20 pointer-events-none"
           data-carousel
         >
           <img
