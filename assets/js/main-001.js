@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const isMobile = () => {
-    return window.matchMedia("screen and (max-width: 1024px)").matches;
+    return window.matchMedia("screen and (max-width: 1024px) and (orientation: portrait)").matches;
   }
 
   const nextSplashText = () => {
