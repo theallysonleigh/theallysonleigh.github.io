@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        '3-auto': 'repeat(3, minmax(0, auto))'
+        '2-auto': 'repeat(2, minmax(0, auto))',
+        '3-auto': 'repeat(3, minmax(0, auto))',
       }
     },
     fontFamily: {
