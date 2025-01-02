@@ -54,8 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
     images[nextIndex].classList.remove('hidden');
   };
 
-  document.querySelector('[data-carousel-next-image]').addEventListener('click', nextImage);
-  document.querySelector('[data-carousel-prev-image]').addEventListener('click', prevImage);
+  const nextButton = document.querySelector('[data-carousel-next-image]')
+  if (nextButton) nextButton.addEventListener('click', nextImage);
+  const prevButton = document.querySelector('[data-carousel-prev-image]')
+  if (prevButton) prevButton.addEventListener('click', prevImage);
 
 
   setInterval(() => {
